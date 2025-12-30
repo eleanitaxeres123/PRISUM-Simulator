@@ -77,7 +77,6 @@ The repository includes:
 - Source code of the simulator
 - Configuration files
 - Execution instructions
-- Example experimental scenarios
 
 The structure of the codebase reflects the state of the simulator at the time of the doctoral study.
 

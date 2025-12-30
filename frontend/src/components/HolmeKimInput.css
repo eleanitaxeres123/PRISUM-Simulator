@@ -1,0 +1,146 @@
+/* src/components/HolmeKimInput.css */
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  position: relative;
+  max-height: 120px;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.navbar-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.navbar-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.navbar-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.navbar-input {
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #dddcdc;
+  background-color: #dddcdc;
+  color: #000000;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  width: 120px;
+}
+
+.navbar-input:hover {
+  background-color: #ffffff;
+  border-color: #60a5fa;
+}
+
+.navbar-input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #60a5fa;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: #3b82f6;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .navbar-controls {
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .navbar-input {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+    max-height: 200px;
+  }
+
+  .navbar-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-controls {
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .navbar-input-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-input {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-title {
+    font-size: 1.1rem;
+  }
+
+  .navbar-label {
+    font-size: 0.8rem;
+  }
+
+  .navbar-input {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    width: 150px;
+  }
+}
